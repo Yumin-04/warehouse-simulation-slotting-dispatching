@@ -1,0 +1,7 @@
+simpy
+pandas
+numpy
+matplotlib
+seaborn
+openpyxl
+stable-baselines3

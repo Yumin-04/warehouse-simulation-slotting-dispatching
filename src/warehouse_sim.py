@@ -1,3 +1,4 @@
+from pathlib import Path
 import simpy
 import pandas as pd 
 import numpy as np
@@ -933,9 +934,10 @@ def report_kpi_scoreboard(res_df):
 # ==========================================
 def main():
     # 1. 데이터 파일 읽기
-    outbound_plan = pd.read_csv('outbound_plan_toy.csv')
-    production_plan = pd.read_csv('production_plan_toy.csv')
-    bom_df = pd.read_excel('BOM_toy.xlsx')
+    data_dir = Path(__file__).resolve().parent.parent / 'data'
+    outbound_plan = pd.read_csv(data_dir / 'outbound_plan_toy.csv')
+    production_plan = pd.read_csv(data_dir / 'production_plan_toy.csv')
+    bom_df = pd.read_excel(data_dir / 'BOM_toy.xlsx')
 
     outbound_plan['생산일자'] = pd.to_datetime(outbound_plan['생산일자']).dt.date
     production_plan['생산일자'] = pd.to_datetime(production_plan['생산일자']).dt.date
