@@ -1,6 +1,6 @@
 # Warehouse Simulation: Slotting and Dispatching
 
-Rev. 1 | Created: 2026-10-19 | Updated: 2026-10-19 16:23 CDT
+Rev. 2 | Created: 2026-10-19 | Updated: 2026-11-18 03:05 KST
 
 자동화 창고에서 적치(slotting)와 작업할당(dispatching)을 따로 다루던 기존 방식의 한계를 보완하기 위해, 두 규칙을 함께 평가하는 이산 사건 시뮬레이션입니다.
 
@@ -59,6 +59,8 @@ pip install -r requirements.txt
 python src/warehouse_sim.py
 ```
 
+- **[KR]** toy data로도 12개 조합을 3일치씩 시뮬레이션하므로 실행에 수 분 이상 걸리고, 끝나면 조합별 그래프 창 12개가 순서대로 열립니다. 창을 닫아야 다음 창이 열립니다.
+- **[EN]** Even on the toy data, 12 combinations are simulated for 3 days each, so a run takes several minutes or more, and 12 plot windows open one after another when it finishes. Close each window to open the next one.
 - **[KR]** 한글 font로 Malgun Gothic을 사용하므로, 다른 OS에서는 `src/warehouse_sim.py`의 font 설정을 바꿔야 할 수 있습니다.
 - **[EN]** The plots use the Malgun Gothic font, so you may need to change the font setting in `src/warehouse_sim.py` on other operating systems.
 
