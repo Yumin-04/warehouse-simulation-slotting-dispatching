@@ -1,12 +1,12 @@
 # Warehouse Simulation: Slotting and Dispatching
 
-Rev. 2 | Created: 2026-10-19 | Updated: 2026-11-18 03:05 KST
+Rev. 3 | Created: 2026-10-19 | Updated: 2026-11-18 03:17 KST
 
 자동화 창고에서 적치(slotting)와 작업할당(dispatching)을 따로 다루던 기존 방식의 한계를 보완하기 위해, 두 규칙을 함께 평가하는 이산 사건 시뮬레이션입니다.
 
 A discrete-event simulation that evaluates slotting and dispatching rules together for an automated warehouse, instead of treating them as separate decisions.
 
-- Project period: 2025.09 ~ 2026.08 (Capstone Design)
+- Project period: 2025.09 ~ 2026.12 (Capstone Design)
 
 ---
 
